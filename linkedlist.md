@@ -11,7 +11,7 @@ https://leetcode.com/problems/merge-two-sorted-lists/
 ### [] [] -> []
 ###
 ### Time complexity is O(len(list1)+len(list2))), for space O(2*len(list1)+len(list2))) ~ the same
-### It works from second try (after stupit error, when I forgot to return value), but I'm not sure why the third case works
+### It works from second try (after stupid error, when I forgot to return value)
 
 
 
