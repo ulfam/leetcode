@@ -43,9 +43,5 @@ class Solution:
             reslist.next = cur2
         return reslisthead.next
 
-            
-
-
-
 
 ```
