@@ -6,20 +6,21 @@ https://leetcode.com/problems/squares-of-a-sorted-array/
 
 ### tried to solve without hints - success after 17 min
 ### Some test-cases:
-### 
-### 
+### [-11, -3,-1,0,1,2,5,6] -> [121,36,25,9,4,1,1,0] -> [0,1,1,4,9,25,36,121]
+### [-9] -> [81] -> [81]
+### main idea - two pointers from opposite sides
 ### 
 ###
-### Time complexity is 
+### Time complexity is O(2*len(nums)) because of list reversing reversing. Additional memory O(len(nums))
 ### 
 
-# [-11, -3,-1,0,1,2,5,6] - []
-# two pointers from opposite sides
-
+# 
+# 
 ```python
 class Solution:
     def sortedSquares(self, nums: List[int]) -> List[int]:
-        squarednums = [0]*len(nums)
+        # I don't make None check because we have condition that 1 <= nums.length <= 104
+        squarednums = [0]*len(nums) 
         start = 0
         end = len(nums)-1
         for i in range(len(nums)):
