@@ -4,8 +4,8 @@
 
 https://leetcode.com/problems/binary-search/
 
-### tried to solve without hints - 
-### Time complexity is 
+### tried to solve without hints - 30 min, problem with corners
+### Time complexity is O(log n), space const
 ### 
 
 <details><summary>Test Cases</summary><blockquote>    
