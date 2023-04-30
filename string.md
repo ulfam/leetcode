@@ -1,4 +1,5 @@
 + [String Compression](#string-compression)
++ [Long Pressed Name](#long-pressed-name)
 
 ## String Compression
 
@@ -62,5 +63,23 @@ def compress(self, chars: List[str]) -> int:
         for i in range(l):
             chars[i]=s[i]
         return l
+
+```
+
+## Long Pressed Name
+
+https://leetcode.com/problems/long-pressed-name/
+
+### tried to solve without hints - much time, solutions not optimal
+### Time complexity is O(2n), space O(2n) 
+### 
+
+<details><summary>Test Cases</summary><blockquote>
+
+</blockquote></details>
+
+
+```python
+
 
 ```
