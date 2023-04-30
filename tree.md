@@ -5,7 +5,7 @@
 https://leetcode.com/problems/maximum-depth-of-binary-tree/
 
 ### tried to solve without hints 
-### Time complexity is 
+### Time complexity is O(log n), space - const
 ### 
 
 <details><summary>Test Cases</summary><blockquote>
