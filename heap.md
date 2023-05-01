@@ -1,6 +1,3 @@
-Top K Frequent Elements
- 
-
 + [Top K Frequent Elements](#top-k-frequent-elements)
 
 ## Top K Frequent Elements
