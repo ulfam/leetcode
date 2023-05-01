@@ -6,17 +6,15 @@
 https://leetcode.com/problems/squares-of-a-sorted-array/
 
 ### tried to solve without hints - success after 17 min
-### Some test-cases:
-### [-11, -3,-1,0,1,2,5,6] -> [121,36,25,9,4,1,1,0] -> [0,1,1,4,9,25,36,121]
-### [-9] -> [81] -> [81]
 ### main idea - two pointers from opposite sides
-### 
-###
 ### Time complexity is O(2*len(nums)) because of list reversing reversing. Additional memory O(len(nums))
-### 
 
-# 
-# 
+<details><summary>Test Cases</summary><blockquote>
+    [-11, -3,-1,0,1,2,5,6] -> [121,36,25,9,4,1,1,0] -> [0,1,1,4,9,25,36,121]
+    [-9] -> [81] -> [81]
+</blockquote></details>
+
+
 ```python
 class Solution:
     def sortedSquares(self, nums: List[int]) -> List[int]:
@@ -41,13 +39,10 @@ class Solution:
 https://leetcode.com/problems/summary-ranges/
 
 ### tried to solve without hints - success after 15 min
-### 
 ###
 ### Time complexity is O(n). space O(n)
 ### 
 
-# 
-# 
 ```python
 class Solution:
     def summaryRanges(self, nums: List[int]) -> List[str]:
