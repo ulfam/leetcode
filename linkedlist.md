@@ -5,14 +5,15 @@
 https://leetcode.com/problems/merge-two-sorted-lists/
 
 ### tried to solve without hints - success after 20 min
-### Some test-cases:
-### [1,2,4] [1,3,4] -> [1,1,2,3,4,4]
-### [1,2,4,5,6] [1,3,4] -> [1,1,2,3,4,4,5,6]
-### [] [] -> []
-###
 ### Time complexity is O(len(list1)+len(list2))), for space O(2*len(list1)+len(list2))) ~ the same
-### It works from second try (after stupid error, when I forgot to return value)
 
+
+<details><summary>Test Cases</summary><blockquote>
+    [1,2,4] [1,3,4] -> [1,1,2,3,4,4]
+    [1,2,4,5,6] [1,3,4] -> [1,1,2,3,4,4,5,6]
+    [] [] -> []
+   
+</blockquote></details>
 
 
 ```python
