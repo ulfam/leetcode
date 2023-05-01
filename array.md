@@ -1,4 +1,5 @@
 + [Squares of a Sorted Array](#squares-of-a-sorted-array)
++ [Summary Ranges](#summary-ranges)
 
 ## Squares of a Sorted Array
 
@@ -33,3 +34,44 @@ class Solution:
         return squarednums[::-1]
         
 ```
+
+
+## Summary Ranges
+
+https://leetcode.com/problems/summary-ranges/
+
+### tried to solve without hints - success after 15 min
+### 
+###
+### Time complexity is O(n). space O(n)
+### 
+
+# 
+# 
+```python
+class Solution:
+    def summaryRanges(self, nums: List[int]) -> List[str]:
+        if len(nums) == 0:
+            return []
+        else:
+            start = nums[0]
+            end = nums[0]
+            ranges = []
+            for i in range(1,len(nums)):
+                if nums[i] == (nums[i-1]+1):
+                    end = nums[i]
+                else:
+                    if start != end:
+                        s = str(start)+"->"+str(end)
+                    else:
+                        s = str(start)
+                    ranges.append(s)
+                    start = end = nums[i]
+            if start != end:
+                lasts = str(start)+"->"+str(end)
+            else:
+                lasts = str(start)
+            ranges.append(lasts)
+            return ranges
+```
+
