@@ -1,5 +1,6 @@
 + [String Compression](#string-compression)
 + [Long Pressed Name](#long-pressed-name)
++ [Group Anagrams](#group-anagrams)
 
 ## String Compression
 
@@ -70,8 +71,8 @@ def compress(self, chars: List[str]) -> int:
 
 https://leetcode.com/problems/long-pressed-name/
 
-### tried to solve without hints - much time, solutions not optimal
-### Time complexity is O(2n), space O(2n) 
+### NOT SOLVED
+### Time complexity 
 ### 
 
 <details><summary>Test Cases</summary><blockquote>
@@ -83,3 +84,37 @@ https://leetcode.com/problems/long-pressed-name/
 
 
 ```
+
+
+## Group Anagrams
+
+
+### solved ~ 15 min
+### Time complexity O(n), space O(n)
+### 
+
+https://leetcode.com/problems/group-anagrams/
+
+<details><summary>Test Cases</summary><blockquote>
+
+</blockquote></details>
+
+
+```python
+class Solution:
+    def groupAnagrams(self, strs: List[str]) -> List[List[str]]:
+        sorted_str = []
+        d = {}
+        for iw in range(len(strs)):
+            sorted_w = "".join(sorted(strs[iw]))
+            if d.get(sorted_w)!=None:
+                d[sorted_w].append(strs[iw])
+            else:
+                d[sorted_w]=[strs[iw]]
+        answ = []
+        for key, value in d.items():
+            answ.append(value)
+        return answ
+```
+
+
