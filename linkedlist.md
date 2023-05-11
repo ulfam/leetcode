@@ -43,6 +43,6 @@ class Solution:
         else:
             reslist.next = cur2
         return reslisthead.next
-
+#  ПОПРОБОВАТЬ БЕЗ ИСПОЛЬЗОВАНИЯ НОВОГО СПИСКА - ЧЕРЕЗ РАСЦЕПЛЕНИЕ УКАЗАТЕЛЯ НОВОГО
 
 ```
