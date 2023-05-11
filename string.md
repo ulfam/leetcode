@@ -72,7 +72,7 @@ def compress(self, chars: List[str]) -> int:
 
 https://leetcode.com/problems/long-pressed-name/
 
-### NOT SOLVED
+### РЕШАТЬ ЧЕРЕЗ 2 УКАЗАТЕЛЯ И ЧАСТОТУ ПО ПОДОТРЕЗКАМ
 ### Time complexity 
 ### 
 
