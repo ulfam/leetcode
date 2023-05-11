@@ -5,7 +5,7 @@
 https://leetcode.com/problems/top-k-frequent-elements/
 
 ### tried to solve without hints - 
-### Time complexity is O((u log u) + n), where u - count of unique elements in nums, space complexity is O(u+k)
+### Time complexity is O((u log u) + n) -> O(n log n), where u - count of unique elements in nums, space complexity is O(u+k)-> O(2n) -> O(n)
 ### 
 
 <details><summary>Test Cases</summary><blockquote>
@@ -30,4 +30,5 @@ class Solution:
             if value in freq[-k:]:
                 final_array.append(key)
         return final_array
+        # РЕШИТЬ ЕЩЁ ЧЕРЕЗ БИБЛИОТЕКУ heapq
 ```
