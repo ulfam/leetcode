@@ -69,6 +69,6 @@ class Solution:
                 lasts = str(start)
             ranges.append(lasts)
             return ranges
-            # ПОПРОБОВАТЬ ЧЕРЕЗ ДВА ВЛОЖЕННЫХ ЦИКЛА ЧЕРЕЗ ДВА УКАЗАТЕЛЯ
+            # ПОПРОБОВАТЬ ЧЕРЕЗ ДВА ВЛОЖЕННЫХ ЦИКЛА while ЧЕРЕЗ ДВА УКАЗАТЕЛЯ 
 ```
 
