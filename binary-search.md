@@ -40,14 +40,14 @@ class Solution:
         l=0
         r=n-1
         while l<r and (ans < 0):
-            m = (l+r) // 2
+            m = (l+r) // 2 # лучше l + (r-l) // 2, чтобы покрыть кейс выхода за возможные значения
             if nums[m]==target:
                 ans = m
-            if nums[m]>target:
+            elif nums[m]>target: # лучше else
                 r = m-1
-            if nums[m]<target:
+            else: # nums[m]<target
                 l = m+1
-        if l==r and nums[l]==target:
+        if l==r and nums[l]==target: # по идее этого не должно быть - сразу возвращение ответа
             ans = l
         return ans
 ```
