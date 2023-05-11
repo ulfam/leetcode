@@ -32,5 +32,7 @@ class Solution:
             return max_depths
         else:
             return 0
+            
+# ПЕРЕПИСАТЬ ЗАНОВО
 
 ```
