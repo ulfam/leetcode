@@ -64,6 +64,7 @@ def compress(self, chars: List[str]) -> int:
         for i in range(l):
             chars[i]=s[i]
         return l
+# ПЕРЕПИСАТЬ С ДВУМЯ УКАЗАТЕЛЯМИ - ОДИН УБЕГАЕТ ВПЕРЕД, ДРУГОЙ СЗАДИ
 
 ```
 
