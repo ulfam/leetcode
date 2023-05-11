@@ -52,6 +52,9 @@ class LRUCache:
                 self.last = key
 
 
+# дописать: чтобы работало. Переписать if /else на self.d.get(..., -1)
+
+
 # Your LRUCache object will be instantiated and called as such:
 # obj = LRUCache(capacity)
 # param_1 = obj.get(key)
