@@ -54,6 +54,7 @@ class LRUCache:
 
 # дописать: чтобы работало c least. Переписать if /else на self.d.get(..., -1)
 # переписать, чтобы проверка была на if key in self.d:
+# почитать про хэш
 
 
 # Your LRUCache object will be instantiated and called as such:
