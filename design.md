@@ -52,7 +52,8 @@ class LRUCache:
                 self.last = key
 
 
-# дописать: чтобы работало. Переписать if /else на self.d.get(..., -1)
+# дописать: чтобы работало c least. Переписать if /else на self.d.get(..., -1)
+# переписать, чтобы проверка была на if key in self.d:
 
 
 # Your LRUCache object will be instantiated and called as such:
