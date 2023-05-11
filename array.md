@@ -30,6 +30,7 @@ class Solution:
                 squarednums[i] = (nums[end])**2
                 end-=1
         return squarednums[::-1]
+        # ПЕРЕПИСАТЬ БЕЗ РАЗВОРОТА С enumerate
         
 ```
 
