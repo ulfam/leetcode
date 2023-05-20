@@ -1,4 +1,5 @@
 + [Merge Two Sorted Lists](#merge-two-sorted-lists)
++ [Reverse Linked List](#reverse-linked-list)
 
 ## Merge Two Sorted Lists
 
@@ -46,3 +47,10 @@ class Solution:
 #  ПОПРОБОВАТЬ БЕЗ ИСПОЛЬЗОВАНИЯ НОВОГО СПИСКА - ЧЕРЕЗ РАСЦЕПЛЕНИЕ УКАЗАТЕЛЯ НОВОГО
 
 ```
+
+
+
+ ## Reverse Linked List
+ https://leetcode.com/problems/reverse-linked-list/
+ 
+ 
