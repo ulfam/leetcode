@@ -54,3 +54,27 @@ class Solution:
  https://leetcode.com/problems/reverse-linked-list/
  
  
+```python
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+class Solution:
+    def reverseList(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        if head:
+            first = head
+            second = head.next
+            if second:
+                first.next = None
+                while second.next:
+                    third = second.next
+                    second.next = first
+                    first = second
+                    second = third
+                second.next = first
+                return second
+            else:
+                return first
+
+```
