@@ -1,5 +1,6 @@
 + [Squares of a Sorted Array](#squares-of-a-sorted-array)
 + [Summary Ranges](#summary-ranges)
++ [Move Zeroes](#move-zeroes)
 
 ## Squares of a Sorted Array
 
@@ -72,3 +73,28 @@ class Solution:
             # ПОПРОБОВАТЬ ЧЕРЕЗ ДВА ВЛОЖЕННЫХ ЦИКЛА while ЧЕРЕЗ ДВА УКАЗАТЕЛЯ 
 ```
 
+## Move Zeroes
+
+https://leetcode.com/problems/move-zeroes/
+
+### tried to solve without hints - success after 15 min
+###
+### Time complexity is O(n**2). space O(n)
+### 
+
+```python
+class Solution:
+    def moveZeroes(self, nums: List[int]) -> None:
+        """
+        Do not return anything, modify nums in-place instead.
+        """
+        slow = 0
+        fast = 1
+        while slow < len(nums) and fast < len(nums):
+            if nums[slow] == 0:
+                nums[slow] = nums[fast]
+                nums[fast] = 0
+            fast+=1
+            if (nums[slow])!=0:
+                slow+=1
+```
