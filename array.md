@@ -79,7 +79,7 @@ https://leetcode.com/problems/move-zeroes/
 
 ### tried to solve without hints - success after 15 min
 ###
-### Time complexity is O(n**2). space O(n)
+### Time complexity is O(n). space O(1)
 ### 
 
 ```python
