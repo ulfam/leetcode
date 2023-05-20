@@ -53,6 +53,9 @@ class Solution:
  ## Reverse Linked List
  https://leetcode.com/problems/reverse-linked-list/
  
+ ### tried to solve without hints
+### Time complexity is O(len(n)), for space O(1) 
+
  
 ```python
 # Definition for singly-linked list.
