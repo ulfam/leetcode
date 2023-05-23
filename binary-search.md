@@ -1,4 +1,5 @@
 + [Binary Search](#binary-search)
++ [Search a 2D Matrix](#search-a-2d-matrix)
 
 ## Binary Search
 
@@ -51,3 +52,32 @@ class Solution:
             ans = l
         return ans
 ```
+
+
+## Search a 2D Matrix
+```python
+class Solution:
+    def searchMatrix(self, matrix: List[List[int]], target: int) -> bool:
+        m = len(matrix)
+        if m == 0:
+            return False
+        n = len(matrix[0])
+        
+        # binary search
+        left, right = 0, m * n - 1
+        while left <= right:
+                pivot_idx = left + (right-left) // 2
+                pivot_element = matrix[pivot_idx // n][pivot_idx % n]
+                if target == pivot_element:
+                    return True
+                else:
+                    if target < pivot_element:
+                        right = pivot_idx - 1
+                    else:
+                        left = pivot_idx + 1
+        return False
+```
+
+
+
+
