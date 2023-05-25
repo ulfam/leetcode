@@ -79,5 +79,5 @@ class Solution:
                 return second
             else:
                 return first
-
+                # попробовать через first, second, third = None, head, None
 ```
