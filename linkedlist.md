@@ -1,6 +1,7 @@
 + [Merge Two Sorted Lists](#merge-two-sorted-lists)
 + [Reverse Linked List](#reverse-linked-list)
 + [Middle of the Linked List](#middle-of-the-linked-list)
++ [Palindrome Linked List](#palindrome-linked-list)
 
 ## Merge Two Sorted Lists
 
@@ -88,7 +89,6 @@ class Solution:
 https://leetcode.com/problems/middle-of-the-linked-list/
 
 Given the head of a singly linked list, return the middle node of the linked list.
-
 If there are two middle nodes, return the second middle node.
 
 Complexity is O(n)
@@ -114,3 +114,12 @@ class Solution:
         return cursec
 ```
 
+
+## Palindrome Linked List
+https://leetcode.com/problems/palindrome-linked-list/
+
+Given the head of a singly linked list, return true if it is a palindrome or false otherwise.
+ 
+ ```python
+
+```
