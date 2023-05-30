@@ -91,7 +91,7 @@ https://leetcode.com/problems/middle-of-the-linked-list/
 Given the head of a singly linked list, return the middle node of the linked list.
 If there are two middle nodes, return the second middle node.
 
-Complexity is O(n)
+Time complexity is O(n), space - const
 
 ```python
 # Definition for singly-linked list.
@@ -119,7 +119,24 @@ class Solution:
 https://leetcode.com/problems/palindrome-linked-list/
 
 Given the head of a singly linked list, return true if it is a palindrome or false otherwise.
+
+Time complexity is O(n), space - O(n)
  
  ```python
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+class Solution:
+    def isPalindrome(self, head: Optional[ListNode]) -> bool:
+        l = 0
+        v = []
+        cur = head
+        while cur:
+            l+=1
+            v.append(cur.val)
+            cur = cur.next
+        return v[:(l // 2)] == v[::-1][:(l // 2)]
 
 ```
