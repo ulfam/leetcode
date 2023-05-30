@@ -91,5 +91,26 @@ Given the head of a singly linked list, return the middle node of the linked lis
 
 If there are two middle nodes, return the second middle node.
 
+Complexity is O(n)
 
+```python
+# Definition for singly-linked list.
+# class ListNode:
+#     def __init__(self, val=0, next=None):
+#         self.val = val
+#         self.next = next
+class Solution:
+    def middleNode(self, head: Optional[ListNode]) -> Optional[ListNode]:
+        l = 0
+        cur = head
+        while cur:
+            l+=1
+            cur = cur.next
+        t = 0
+        cursec = head
+        while t < (l // 2) and cursec:
+            cursec = cursec.next
+            t+=1
+        return cursec
+```
 
