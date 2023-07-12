@@ -101,6 +101,29 @@ You must write an algorithm with O(log n) runtime complexity.
 
 
 ```python
-
+class Solution:
+    def search(self, nums: List[int], target: int) -> int:
+        ans = -1
+        n = len(nums)
+        l=0
+        r=n-1
+        while l<=r and (ans < 0):
+            m = l + (r-l) // 2
+            if nums[m]==target:
+                ans = m
+            # Case 2: subarray on mid's left is sorted
+            elif nums[m] >= nums[l]:
+                if target >= nums[l] and target < nums[m]:
+                    r = m - 1
+                else:
+                    l = m + 1
+                    
+            # Case 3: subarray on mid's right is sorted.
+            else:
+                if target <= nums[r] and target > nums[m]:
+                    l = m + 1
+                else:
+                    r = m - 1
+        return ans
 ```
 
