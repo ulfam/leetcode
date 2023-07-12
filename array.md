@@ -1,6 +1,7 @@
 + [Squares of a Sorted Array](#squares-of-a-sorted-array)
 + [Summary Ranges](#summary-ranges)
 + [Move Zeroes](#move-zeroes)
++ [Subarray Sum Equals K](#subarray-sum-equals-k)
 
 ## Squares of a Sorted Array
 
@@ -99,4 +100,27 @@ class Solution:
                 slow+=1
                 
        # попробовать через идею, что старт с момента, когда slow стоит на первом нуле. В итоге 2 цикла. Между slow и fast всегда нули. Так мы минимизируем свопы
+```
+
+
+
+## Subarray Sum Equals K
+
+https://leetcode.com/problems/subarray-sum-equals-k/
+
+Given an array of integers nums and an integer k, return the total number of subarrays whose sum equals to k.
+A subarray is a contiguous non-empty sequence of elements within an array.
+
+### tried to solve without hints 
+### Time complexity is 
+### 
+
+<details><summary>Test Cases</summary><blockquote>
+        
+
+</blockquote></details>
+
+
+```python
+
 ```
