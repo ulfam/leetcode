@@ -112,7 +112,7 @@ Given an array of integers nums and an integer k, return the total number of sub
 A subarray is a contiguous non-empty sequence of elements within an array.
 
 ### tried to solve without hints 
-### Time complexity is 
+### Time complexity is O(n), space = O(n)
 ### 
 
 <details><summary>Test Cases</summary><blockquote>
@@ -122,5 +122,23 @@ A subarray is a contiguous non-empty sequence of elements within an array.
 
 
 ```python
-
+class Solution:
+    def subarraySum(self, nums: List[int], k: int) -> int:
+        s =[]
+        acc_sum = 0
+        for i in range(0,len(nums)):
+            acc_sum+=nums[i]
+            s.append(acc_sum)
+        cnt=0
+        dic={}
+        for i in s:
+            if i-k in dic:
+                cnt+=dic[i-k]
+            if i==k:
+                cnt+=1
+            if i in dic:
+                dic[i]+=1
+            else:
+                dic[i]=1
+        return cnt
 ```
